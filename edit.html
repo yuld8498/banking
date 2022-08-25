@@ -83,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <form action="http://127.0.0.1:5500/Edit.html" class="table container-fluid w-90" id="editForm">
+        <form action="edit.jsp" class="table container-fluid w-90" id="editForm">
             <div class="form-group row">
                 <div class="col-md-6">
                     <label class="form-label font-weight-bold">Full Name</label>
@@ -130,8 +130,6 @@
         </div>
     </div>
 
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="text/javascript" src="bootstrap/js/sweetalert2.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="bootstrap/js/jquery.validate-1.19.3.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
@@ -141,15 +139,6 @@
 
     <script>
         $(document).ready(function () {
-            // $("#fullName").validate({
-            //     success: function(){
-            //         document.getElementById("fullName").classList.add("form-control");
-            //     }
-
-            // });
-            // $("#submitchange").click(function () {
-            //     $(".toast").toast("show");
-            // });
             $("#editForm").validate({
                 onclick: false,
                 rules: {
@@ -169,27 +158,11 @@
                     phone: "please enter your phone number",
                     address: "please enter your address"
                 },
-                // errorContainer: "#messageBox1, #messageBox2",
                 success: "valid",
                 success: function () {
-                    //console.log(data);
-                    // $("#editForm").addClass("was-validated");
-                    // document.getElementById(errorList[i].element.id).setCustomValidity("");
                 },
                 errorLabelContainer: ".alert-danger",
-                // wrapper: "li",
-                // errorPlacement: function (error) {
-                //     error.appendTo(".alert-danger");
-                // },
-                // errorClass: "invalid-feedback",
                 showErrors: function (errorMap, errorList) {
-                    // if (this.numberOfInvalids() > 0) {
-                    //     $("#editForm").addClass("was-validated");
-                    //     for (var i = 0; i < errorList.length; i++) {
-                            // document.getElementById(errorList[i].element.id).removeAttribute("not valid");
-                    //     }
-                    // }
-
                     if (this.numberOfInvalids() > 0) {
                         $("#message-alert .alert-danger").removeClass("hide");
                     } else {
@@ -202,15 +175,6 @@
                         $(element).fadeIn();
                     });
                 },
-                // errorElement: "div",
-                // submitHandler: function () {
-                //     Swal.fire({
-                //         icon: 'success',
-                //         title: 'Your work has been saved',
-                //         showConfirmButton: false,
-                //         timer: 5000
-                //     })
-                // }
             });
         });
     </script>

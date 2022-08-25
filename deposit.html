@@ -64,20 +64,20 @@
         </div>
         <form class=" table container-fluid w-90">
             <div class="form-group row">
-                <div class="col-md-6">
-                    <label class="form-label font-weight-bold">customer ID</label>
-                    <input type="text" class="w-100" id="customerID">
+                <div class="col-md-6 margin-top-20">
+                    <label class="form-label font-weight-bold">Customer ID</label>
+                    <input type="text" class="w-100" id="customerID" readonly>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 margin-top-20">
                     <label class="form-label font-weight-bold">Full Name</label>
-                    <input type="text" class="w-100" id="fullName">
+                    <input type="text" class="w-100" id="fullName" readonly>
                 </div>
-                <div class="col-md-6">
-                    <label class="form-label font-weight-bold">Phone</label>
-                    <input type="text" class="w-100" id="phone">
+                <div class="col-md-6 margin-top-20">
+                    <label class="form-label font-weight-bold">Current balance ($)</label>
+                    <input type="text" class="w-100" id="phone" readonly>
                 </div>
-                <div class="col-md-6">
-                    <label class="form-label font-weight-bold">Address</label>
+                <div class="col-md-6 margin-top-20">
+                    <label class="form-label font-weight-bold">Transaction Amount ($)</label>
                     <input type="text" class="w-100" id="address">
                 </div>
                 <div class="col-12 margin-top-20">
@@ -90,6 +90,10 @@
         </form>
     </div>
 </body>
-<script src="https://kit.fontawesome.com/dccec83b30.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/dccec83b30.js" crossorigin="anonymous">
+    function goIndexPage() {
+        location.replace("Index.html");
+    }
+</script>
 
 </html>
