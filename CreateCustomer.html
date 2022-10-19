@@ -75,7 +75,7 @@
                     <h2>Create Customer</h2>
                 </div>
                 <div class="col-7 table-title-content">
-                    <a href="#" class="btn btn-outline-light table-right" onclick="goIndexPage()">
+                    <a href="index.html" class="btn btn-outline-light table-right">
                         <i class="fa-solid fa-bars"></i>
                         <span>List Of Customer</span>
                     </a>
@@ -131,53 +131,10 @@
 </div>
 
 <script type="text/javascript" src="bootstrap/js/jquery-3.6.0.js"></script>
-<script type="text/javascript" src="bootstrap/js/jquery.validate-1.19.3.min.js"></script>
 <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-<script src="bootstrap/js/popper-v1.16.0.min.js"></script>
 <script src="index.js"></script>
 <script src="https://kit.fontawesome.com/dccec83b30.js" crossorigin="anonymous"></script>
 
-<script>
-    $(document).ready(function () {
-        $("#editForm").validate({
-            onclick: false,
-            rules: {
-                fullName: {
-                    required: true,
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
-                phone: "required",
-                address: "required",
-            },
-            messages: {
-                fullName: "please enter you name",
-                email: "please enter your email",
-                phone: "please enter your phone number",
-                address: "please enter your address"
-            },
-            success: "valid",
-            success: function () {
-            },
-            errorLabelContainer: ".alert-danger",
-            showErrors: function (errorMap, errorList) {
-                if (this.numberOfInvalids() > 0) {
-                    $("#message-alert .alert-danger").removeClass("hide");
-                } else {
-                    $("#message-alert .alert-danger").addClass("hide");
-                }
-                this.defaultShowErrors();
-            },
-            highlight: function (element, errorClass) {
-                $(element).fadeOut(function () {
-                    $(element).fadeIn();
-                });
-            },
-        });
-    });
-</script>
 </body>
 
 </html>

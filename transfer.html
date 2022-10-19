@@ -50,8 +50,7 @@
         border: none;
         width: 100%;
     }
-</style>
-
+</style>    
 <body>
     <div class="container-fluid">
         <div class="table container-fluid w-90">
@@ -61,7 +60,7 @@
                         <h1>Transfer money Information</h1>
                     </div>
                     <div class="col-5 table-title-content">
-                        <a href="#" class="btn btn-outline-light table-right" onclick="goIndexPage()">
+                        <a href="index.html" class="btn btn-outline-light table-right">
                             <i class="fa-solid fa-bars"></i>
                             <span>List Of Customer</span>
                         </a>
@@ -73,42 +72,40 @@
             <div class="form-group row">
                 <div class="col-md-3 margin-top-20">
                     <label class="form-label font-weight-bold">Sender ID</label>
-                    <input type="text" class="w-100" id="senderID" readonly>
+                    <input type="text" class="w-100 form-control" id="senderID" readonly>
                 </div>
                 <div class="col-md-3 margin-top-20">
                     <label class="form-label font-weight-bold">Sender Name</label>
-                    <input type="text" class="w-100" id="senderName" readonly>
+                    <input type="text" class="w-100 form-control" id="senderName" readonly>
                 </div>
                 <div class="col-md-3 margin-top-20">
                     <label class="form-label font-weight-bold">Email</label>
-                    <input type="text" class="w-100" id="email" readonly>
+                    <input type="text" class="w-100 form-control" id="email" readonly>
                 </div>
                 <div class="col-md-3 margin-top-20">
                     <label class="form-label font-weight-bold">Sender balance</label>
-                    <input type="text" class="w-100" id="senderBalance" readonly>
+                    <input type="text" class="w-100 form-control" id="senderBalance" readonly>
                 </div>
                 <div class="col-md-3 margin-top-20">
-                    <label class="form-label font-weight-bold">Recipient Name</label>
-                    <div class="col-md-12 h-50 w-100 border-1px">
-                        <select name="cars" id="cars" class="w-100 h-100 border-0">
+                    <label class="form-label font-weight-bold">Recipient Name</label>                   
+                        <select name="cars" id="cars" class="w-100 form-control">
                             <option value="volvo">Volvo</option>
                             <option value="saab">Saab</option>
                             <option value="mercedes">Mercedes</option>
                             <option value="audi">Audi</option>
                         </select>
-                    </div>
                 </div>
                 <div class="col-md-3 margin-top-20">
                     <label class="form-label font-weight-bold">Transfer Amount ($)</label>
-                    <input type="text" class="w-100" id="transferAmount">
+                    <input type="text" class="w-100 form-control" id="transferAmount">
                 </div>
                 <div class="col-md-3 margin-top-20">
                     <label class="form-label font-weight-bold">Fees (%)</label>
-                    <input type="text" class="w-100" id="fees" readonly>
+                    <input type="text" class="w-100 form-control" id="fees" readonly>
                 </div>
                 <div class="col-md-3 margin-top-20">
                     <label class="form-label font-weight-bold">Total amount of transaction ($)</label>
-                    <input type="text" class="w-100" id="total" readonly>
+                    <input type="text" class="w-100 form-control" id="total" readonly>
                 </div>
                 <div class="col-12 margin-top-20">
                     <button type="submit" class="btn btn-outline-primary">
@@ -120,6 +117,5 @@
         </form>
     </div>
 </body>
-<script src="https://kit.fontawesome.com/dccec83b30.js" crossorigin="anonymous"></script>
 
 </html>

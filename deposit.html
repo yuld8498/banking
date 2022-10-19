@@ -54,7 +54,7 @@
                         <h2>Deposit money into customer's account</h2>
                     </div>
                     <div class="col-5 table-title-content">
-                        <a href="#" class="btn btn-outline-light table-right" onclick="goIndexPage()">
+                        <a href="index.html" class="btn btn-outline-light table-right" onclick="goIndexPage()">
                             <i class="fa-solid fa-bars"></i>
                             <span>List Of Customer</span>
                         </a>
@@ -66,19 +66,19 @@
             <div class="form-group row">
                 <div class="col-md-6 margin-top-20">
                     <label class="form-label font-weight-bold">Customer ID</label>
-                    <input type="text" class="w-100" id="customerID" readonly>
+                    <input type="text" class="w-100 form-control" id="customerID" readonly>
                 </div>
                 <div class="col-md-6 margin-top-20">
                     <label class="form-label font-weight-bold">Full Name</label>
-                    <input type="text" class="w-100" id="fullName" readonly>
+                    <input type="text" class="w-100 form-control" id="fullName" readonly>
                 </div>
                 <div class="col-md-6 margin-top-20">
                     <label class="form-label font-weight-bold">Current balance ($)</label>
-                    <input type="text" class="w-100" id="phone" readonly>
+                    <input type="text" class="w-100 form-control" id="phone" readonly>
                 </div>
                 <div class="col-md-6 margin-top-20">
                     <label class="form-label font-weight-bold">Transaction Amount ($)</label>
-                    <input type="text" class="w-100" id="address">
+                    <input type="text" class="w-100 form-control" id="address">
                 </div>
                 <div class="col-12 margin-top-20">
                     <button type="submit" class="btn btn-outline-success">
@@ -90,10 +90,5 @@
         </form>
     </div>
 </body>
-<script src="https://kit.fontawesome.com/dccec83b30.js" crossorigin="anonymous">
-    function goIndexPage() {
-        location.replace("Index.html");
-    }
-</script>
 
 </html>
